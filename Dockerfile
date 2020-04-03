@@ -9,7 +9,7 @@ ssh-client
 # setup SSH for root
 USER root
 RUN mkdir -p /root/.ssh && chmod 0700 /root/.ssh
-RUN echo "StrictHostKeyChecking no" > /root/.ssh/ssh_config
+RUN echo "StrictHostKeyChecking no" > /root/.ssh/config
 
 # install conda
 RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
